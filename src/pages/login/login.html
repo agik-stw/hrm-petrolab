@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <!-- <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button> -->
+    <ion-title align="center">Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-list style="margin-top:80px;">
+
+  <ion-item>
+    <ion-label>Username</ion-label>
+    <ion-input type="text" [(ngModel)]='username'></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Password</ion-label>
+    <ion-input type="password" [(ngModel)]='password'></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<div padding>
+  <button ion-button block (click)='login();'>Sign In</button>
+</div>
+<ion-row padding>
+<ion-col>
+<h5 align="center">PT Petrolab Services</h5>
+</ion-col>
+</ion-row>
+</ion-content>
